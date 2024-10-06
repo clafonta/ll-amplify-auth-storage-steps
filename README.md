@@ -1,25 +1,19 @@
 # ll-amplify-auth-storage-steps
-A guideline to build a NextJS app with Amplify. 
+A guideline to build a NextJS app with [Amplify](https://docs.amplify.aws/). 
+
+* We'll use the Amplify CLI 
+* We'll not use Amplify Studio
+* You need an AWS Account. 
+* You need to create an AWS Profile in your local dev environment.  
 
 ## Table of Contents
 
-1. [01 - Create your Nextjs app](docs/01-create-your-next-app-add-amplify)
-    - [Installation](docs/getting-started.md#installation)
-    - [Configuration](docs/getting-started.md#configuration)
-2. [02 - Initialize Amplify ](docs/02-initialize-amplify.md)
-    - [Feature 1](docs/features.md#feature-1)
-    - [Feature 2](docs/features.md#feature-2)
-3. [API Reference](docs/api-reference.md)
-    - [Endpoints](docs/api-reference.md#endpoints)
-    - [Authentication](docs/api-reference.md#authentication)
-4. [Troubleshooting](docs/troubleshooting.md)
-    - [Common Issues](docs/troubleshooting.md#common-issues)
-    - [FAQs](docs/troubleshooting.md#faqs)
-5. [Contributing](CONTRIBUTING.md)
-6. [License](LICENSE.md)
+* [01 - Create your Nextjs app.](docs/01-create-your-next-app-add-amplify.md)
+* [02 - Create a Dashboard page.](docs/02-add-a-dashboard-page-and-layout.md)
+* [03 - Add authentication-required to the Dashboard layout.](docs/03-add-required-auth-to-the-dashboard.md)
+* [04 - Add the ability to upload files to S3.](docs/04-add-upload-files-to-storage.md)
+* [05 - Add a the ability to view files in a gallery.](docs/05-add-image-gallery.md)
 
 ## Introduction
-
-[Provide a brief introduction to your project here.]
 
 For detailed information on each topic, please click the links in the table of contents above.
