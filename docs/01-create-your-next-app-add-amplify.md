@@ -1,0 +1,133 @@
+### Create a new Next.js app with Pages Router
+
+First, let's create a new Next.js app using the latest version, but opting out of the App Router .
+
+```shellscript
+npx create-next-app@latest my-amplify-app
+cd my-amplify-app
+```
+
+When prompted, choose the following options:
+
+```
+✔ Would you like to use ESLint? … No / Yes
+✔ Would you like to use Tailwind CSS? … No / Yes
+✔ Would you like to use `src/` directory? … No / Yes
+✔ Would you like to use App Router? (recommended) … No / Yes
+✔ Would you like to customize the default import alias (@/*)? … No / Yes
+```
+
+
+### Install Amplify CLI and initialize the project
+
+Now, let's install the Amplify CLI and initialize our project.
+
+```shellscript
+npm install -g @aws-amplify/cli
+amplify init
+```
+
+> [!WARNING]  
+> We're going to stick with Gen 1 for setup for ease of use. 
+
+
+
+
+Follow the prompts to set up your Amplify project. Choose defaults for most options, but make sure to select "JavaScript" as the programming language.
+
+### Add Amplify Auth
+
+Let's add authentication to our project.
+
+```shellscript
+amplify add auth
+```
+
+Choose the default configuration for a quick setup, or customize it based on your needs. Here's what I chose: 
+
+> [!TIP]  
+> We're going to use `Email` instead of the default `Username`. 
+
+```
+Using service: Cognito, provided by: awscloudformation
+ 
+ The current configured provider is Amazon Cognito. 
+ 
+ Do you want to use the default authentication and security configuration? Default configuration
+ Warning: you will not be able to edit these selections. 
+ How do you want users to be able to sign in? Email
+ Do you want to configure advanced settings? No, I am done.
+✅ Successfully added auth resource llnextappf628f981 locally
+
+```
+
+### Add Amplify Storage
+
+Now, let's add storage capabilities to our project.
+
+```shellscript
+amplify add storage
+```
+
+Select "Content" for the storage service, and choose the default options for a quick setup.
+
+```typescript
+? Select from one of the below mentioned services: Content (Images, audio, video, etc.)
+✔ Provide a friendly name for your resource that will be used to label this category in the project: · s3cd2aa16a
+✔ Provide bucket name: · llnextappd0b462876af74e629dbb43b2e568c698
+✔ Who should have access: · Auth and guest users
+✔ What kind of access do you want for Authenticated users? · create/update, read, delete
+✔ What kind of access do you want for Guest users? · read
+✔ Do you want to add a Lambda Trigger for your S3 Bucket? (y/N) · no
+
+```
+
+
+### Push the changes to the cloud
+
+Let's push our local changes to set up the backend resources in AWS.
+
+```shellscript
+amplify push
+```
+
+This command will provision the necessary resources in your AWS account.
+
+### Install Amplify JavaScript libraries
+
+Now, let's install the required Amplify libraries in our Next.js project. 
+
+```shellscript
+npm install aws-amplify @aws-amplify/ui-react
+```
+
+### Configure Amplify in your Next.js app
+
+Create a new file `src/amplify.js` (or `src/amplify.ts` if using TypeScript) and add the following code:
+
+```typescript
+import { Amplify } from 'aws-amplify';
+import awsconfig from './aws-exports';
+
+Amplify.configure(awsconfig);
+```
+
+### Update your app entry point
+
+Modify your `src/pages/_app.tsx` (or `src/pages/_app.js` if not using TypeScript) to include the Amplify configuration:
+
+```typescript
+import '@/styles/globals.css'
+import type { AppProps } from 'next/app'
+import { Amplify } from 'aws-amplify';
+import awsconfig from '../aws-exports';
+
+Amplify.configure(awsconfig);
+
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
+```
+
+
+That's it! You've now created a Next.js app using the Pages Router with Amplify Auth and Storage set up.

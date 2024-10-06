@@ -3,10 +3,10 @@ A guideline to build a NextJS app with Amplify.
 
 ## Table of Contents
 
-1. [01 - Create your Nextjs app](docs/01-create-your-next-app.md)
+1. [01 - Create your Nextjs app](docs/01-create-your-next-app-add-amplify)
     - [Installation](docs/getting-started.md#installation)
     - [Configuration](docs/getting-started.md#configuration)
-2. [Features](docs/features.md)
+2. [02 - Initialize Amplify ](docs/02-initialize-amplify.md)
     - [Feature 1](docs/features.md#feature-1)
     - [Feature 2](docs/features.md#feature-2)
 3. [API Reference](docs/api-reference.md)
