@@ -12,7 +12,6 @@
 │   ├── globals.css
 │   ├── layout.tsx
 │   ├── page.tsx
-
 ```
 
 Dashboard landing page. 

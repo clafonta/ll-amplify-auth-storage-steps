@@ -102,7 +102,8 @@ Now, let's install the required Amplify libraries in our Next.js project.
 npm install aws-amplify @aws-amplify/ui-react
 ```
 
-
+> [!NOTE]  
+> A lot of magic has just occurred!! Amplify procured all the necessary tools policies and configurations needed for Authentication and Storage. See the `src/aws-exports.js` for details.  
 
 That's it! You've now created a Next.js app with the App Router with Amplify Auth and Storage set up.
 
