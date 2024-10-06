@@ -12,6 +12,9 @@ Before we begin, make sure you have Node.js installed on your system. Then, foll
    ```bash
    npx create-next-app@latest ll-next-app --typescript
    ```
+> [!NOTE]  
+> Our app is called 'll-next-app' but you can use another name. 
+
 
 In this guide, we're going to use NextJS page routing. 
 
