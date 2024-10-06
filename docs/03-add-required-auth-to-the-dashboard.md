@@ -3,7 +3,7 @@
 We're going to modify the `dashboard/layout.tsx` page so the Dashboard and sub-pages require authenticated access.
 
 ```typescript
-//dasbhoard/layout.tsx
+//src/app/dasbhoard/layout.tsx
 'use client'
 
 import React from 'react'
