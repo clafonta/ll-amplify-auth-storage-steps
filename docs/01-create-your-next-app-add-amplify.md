@@ -1,6 +1,6 @@
-### Create a new Next.js app with Pages Router
+### Create a new Next.js app. 
 
-First, let's create a new Next.js app using the latest version, but opting out of the App Router .
+First, let's create a new Next.js app using the latest version. 
 
 ```shellscript
 npx create-next-app@latest my-amplify-app
@@ -10,11 +10,12 @@ cd my-amplify-app
 When prompted, choose the following options:
 
 ```
-✔ Would you like to use ESLint? … No / Yes
-✔ Would you like to use Tailwind CSS? … No / Yes
-✔ Would you like to use `src/` directory? … No / Yes
-✔ Would you like to use App Router? (recommended) … No / Yes
-✔ Would you like to customize the default import alias (@/*)? … No / Yes
+✔ Would you like to use TypeScript?  Yes
+✔ Would you like to use ESLint?  Yes
+✔ Would you like to use Tailwind CSS?  Yes
+✔ Would you like to use `src/` directory?  Yes
+✔ Would you like to use App Router? (recommended)  Yes
+✔ Would you like to customize the default import alias (@/*)? No
 ```
 
 
@@ -28,7 +29,7 @@ amplify init
 ```
 
 > [!WARNING]  
-> We're going to stick with Gen 1 for setup for ease of use. 
+> We're going to stick with Gen 1 for setup for ease of use.
 
 
 
@@ -101,33 +102,8 @@ Now, let's install the required Amplify libraries in our Next.js project.
 npm install aws-amplify @aws-amplify/ui-react
 ```
 
-### Configure Amplify in your Next.js app
-
-Create a new file `src/amplify.js` (or `src/amplify.ts` if using TypeScript) and add the following code:
-
-```typescript
-import { Amplify } from 'aws-amplify';
-import awsconfig from './aws-exports';
-
-Amplify.configure(awsconfig);
-```
-
-### Update your app entry point
-
-Modify your `src/pages/_app.tsx` (or `src/pages/_app.js` if not using TypeScript) to include the Amplify configuration:
-
-```typescript
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
-import { Amplify } from 'aws-amplify';
-import awsconfig from '../aws-exports';
-
-Amplify.configure(awsconfig);
-
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
-```
 
 
-That's it! You've now created a Next.js app using the Pages Router with Amplify Auth and Storage set up.
+That's it! You've now created a Next.js app with the App Router with Amplify Auth and Storage set up.
+
+Next, let's [add a simple Dashboard page to the app.](02-add-a-dashboard-page-and-layout.md)
