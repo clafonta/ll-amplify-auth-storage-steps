@@ -17,3 +17,5 @@ A guideline to build a NextJS app with [Amplify](https://docs.amplify.aws/).
 ## Introduction
 
 For detailed information on each topic, please click the links in the table of contents above.
+
+Working code is here: [ll-next-app-router](https://github.com/clafonta/ll-next-app-router).
