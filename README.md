@@ -3,8 +3,12 @@ A guideline to build a NextJS app along with [Amplify](https://docs.amplify.aws/
 
 * We'll use the Amplify CLI to procure AWS backend resources.
 * We'll not use Amplify Studio
+
+### Prerequisites
 * You need an AWS Account. 
-* You need to create an AWS Profile in your local dev environment.  
+* You need to create an AWS Profile in your local dev environment.
+* Be familiar with NextJS
+* Be familiar with Amplify
 
 ## Table of Contents
 
