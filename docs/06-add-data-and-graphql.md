@@ -17,7 +17,7 @@ Make the following selections.
 ? Choose a schema template: Blank Schema
 ```
 
-Let's add a Schema _before_ getting amplify to push our updates. We'll place the file with the Amplify directory within the project.  
+Let's add a Schema _before_ getting amplify to push our updates. We'll place the file within the Amplify directory within the project.  
 
 ```graphql
 # amplify/backend/api/<project name>/schema.graphql
