@@ -128,3 +128,5 @@ You'll be asked a few questions. Here are some of the answers:
 
 Now, we should be ready leverage our API. 
 
+Let's [create a page to leverage the API.](docs/07-add-company-crud.md)
+
