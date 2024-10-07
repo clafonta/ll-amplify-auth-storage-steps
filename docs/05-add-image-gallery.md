@@ -363,5 +363,5 @@ Your Image Gallery page should look like this.
 
 You should see the images you uploaded previously. 
 
---- THE END ---
+Next, let's [add some data and grapql support](06-add-data-and-graphql.md)
 
