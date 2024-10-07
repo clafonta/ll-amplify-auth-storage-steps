@@ -1,5 +1,5 @@
 # ll-amplify-auth-storage-steps
-A guideline to build a NextJS app with [Amplify](https://docs.amplify.aws/). 
+A guideline to build a NextJS app along with [Amplify](https://docs.amplify.aws/). 
 
 * We'll use the Amplify CLI to procure AWS backend resources.
 * We'll not use Amplify Studio
