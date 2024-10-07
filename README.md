@@ -27,5 +27,4 @@ For detailed information on each topic, please click the links in the table of c
 > In the real world, I would recommend building components which helps reduce code bloat, 
 > drives consistency, and helps with your sanity. 
 
-Working code is here: [ll-next-app-router](https://github.com/clafonta/ll-next-app-router).
 
