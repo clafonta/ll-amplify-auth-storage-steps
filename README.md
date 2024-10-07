@@ -20,8 +20,12 @@ A guideline to build a NextJS app with [Amplify](https://docs.amplify.aws/).
 
 For detailed information on each topic, please click the links in the table of contents above.
 
+
 > [!IMPORTANT]  
 > You may notice in this walkthrough the use of bloated HTML instead of using React components. 
 > This is on purpose to help avoid the need to import and/or create custom components. 
 > In the real world, I would recommend building components which helps reduce code bloat, 
 > drives consistency, and helps with your sanity. 
+
+Working code is here: [ll-next-app-router](https://github.com/clafonta/ll-next-app-router).
+
