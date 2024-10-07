@@ -1,4 +1,4 @@
-hi### Use Amplify to setup an API backend and resources.
+### Use Amplify to setup an API backend and resources.
 
 This will demonstrate how to manage data in DynamoDB and manage the data via AWS AppSync for GraphQL.
 
