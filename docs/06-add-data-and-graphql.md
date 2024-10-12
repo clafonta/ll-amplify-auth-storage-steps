@@ -113,7 +113,6 @@ type S3Object {
 Then run the following to get Amplify to provision the needed backend resources in AWS. 
 ```bash
 amplify push
-amplify publish
 ```
 
 You'll be asked a few questions. Here are some of the answers: 
@@ -126,10 +125,6 @@ You'll be asked a few questions. Here are some of the answers:
 ? Enter maximum statement depth [increase from default if your schema is deeply nested]: 2
 ? Enter the file name for the generated code: src/API.ts
 ```
-Note: 
-* ```amplify push``` will build all your local backend resources and provision it in the cloud
-* ```amplify publish``` will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
-
 
 Now, we should be ready leverage our API. 
 
