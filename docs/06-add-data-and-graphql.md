@@ -13,8 +13,16 @@ amplify add api
 Make the following selections. 
 ```
 ? Select from one of the below mentioned services: GraphQL
+? Here is the GraphQL API that we will create. Select a setting to edit or continue Authorization modes: API key (default, expiration time: 7 days from now)
+
+>>> IMPORTANT! Change Authorization modes from ```API key``` to ```Amazon Cognito User Pool``` <<<<
+
+? Choose the default authorization type for the API Amazon Cognito User Pool
+Use a Cognito user pool configured as a part of this project.
+? Configure additional auth types? No
 ? Here is the GraphQL API that we will create. Select a setting to edit or continue Continue
 ? Choose a schema template: Blank Schema
+✅ GraphQL schema compiled successfully.
 ```
 
 Let's add a Schema _before_ getting amplify to push our updates. We'll place the file within the Amplify directory within the project.  
