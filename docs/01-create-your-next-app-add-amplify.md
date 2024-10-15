@@ -6,6 +6,13 @@ First, let's create a new Next.js app using the latest version.
 npx create-next-app@latest my-amplify-app
 cd my-amplify-app
 ```
+> [!IMPORTANT]  
+> If you already have an Amplify app but checking
+> it out for the first from your repo, then 
+> be sure to delete the ```<root>/amplify/team-provider-info``` 
+> before running ```amplify init```. 
+
+team-provider-info
 
 When prompted, choose the following options:
 
