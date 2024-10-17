@@ -12,7 +12,6 @@ cd my-amplify-app
 > be sure to delete the ```<root>/amplify/team-provider-info``` 
 > before running ```amplify init```. 
 
-team-provider-info
 
 When prompted, choose the following options:
 
